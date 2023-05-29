@@ -29,6 +29,17 @@ app.get("/",(req,res)=>{
     res.render("dashboard")
 })
 
+app.get("/franchise",(req,res)=>{
+    res.send([
+        {name:"Alamu John", school:"SQI"},
+        {name:"Alamu John", school:"SQI"},
+        {name:"Alamu John", school:"SQI"},
+        {name:"Alamu John", school:"SQI"},
+        {name:"Alamu John", school:"SQI"},
+        {name:"Alamu John", school:"SQI"},
+    ])
+})
+
 app.listen(PORT,()=>{
     console.log(`Lift off! We have lift off ${PORT}`);
     console.log(`My one week salary is ${SALARY}`);
